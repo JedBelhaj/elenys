@@ -8,6 +8,7 @@ url("../fonts/flaticone679.svg?7be827e199392bb56ae95dacf43f5036#flaticon") forma
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    color: white;
     font-family: flaticon !important;
     font-style: normal;
     font-weight: normal !important;

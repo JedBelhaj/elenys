@@ -69,6 +69,7 @@ html {
 }
 :root {
   font-family: "Inter", sans-serif;
+  --bgcolor: #323232;
   --primary: #d59200;
   scroll-behavior: smooth;
 }
@@ -76,7 +77,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: #687693;
-  background-color: #fff;
+  background-color: var(--bgcolor);
   font-size: 15px;
   font-size: 1rem;
   overflow-x: hidden;
@@ -86,10 +87,9 @@ body {
     font-size: 14px;
   }
 }
-
 p {
   font-size: 16px;
-  color: #687693;
+  color: #cbcbcb;
   line-height: 1.8em;
 }
 
@@ -99,7 +99,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #112437;
+  color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
@@ -1309,10 +1309,15 @@ img {
     padding: 20px 0;
   }
 }
+.loaderimg{
+  margin-top: 3rem;
+  height: 6rem;
+}
 .topbar {
   font-size: 16px;
   color: black;
   margin: 0;
+  height: 4.5rem;
 }
 
 .topbar ul {
@@ -1324,15 +1329,15 @@ img {
 
 @media (max-width: 991px) {
   .topbar ul {
+
     float: none;
-    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 .topbar ul li {
-  font-size: 16px;
+  font-size: 13px;
   float: left;
   padding: 15px 10px;
   color: black;
@@ -1444,11 +1449,12 @@ img {
   /* style for navigation less than 992px */
   /*navbar collaps less then 992px*/
   /*** cart-search-contact ***/
-  background-color: #fff;
+  background-color: var(--bgcolor);
+
 }
 
 .wpo-site-header .navigation {
-  background-color: #fff;
+  background-color: var(--bgcolor);
   margin-bottom: 0;
   padding: 0;
   border: 0;
@@ -1511,7 +1517,12 @@ img {
     justify-content: end;
   }
 }
-
+span{
+  background-color: var(--bgcolor)!important;
+}
+a{
+  color:white!important;
+}
 @media screen and (min-width: 992px) {
   .wpo-site-header #navbar li {
     position: relative;
@@ -2098,7 +2109,7 @@ img {
   /*navbar collaps less then 992px*/
 }
 .wpo-site-header .navigation {
-  background-color: #fff;
+  background-color: var(--bgcolor);
   margin-bottom: 0;
   padding: 0;
   border: 0;
@@ -4031,7 +4042,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(247, 248, 251, 0) 0%, #F7F8FB 100%);
+  background: linear-gradient(180deg, rgba(247, 248, 251, 0) 0%, var(--bgcolor) 100%);
   z-index: -1;
   opacity: 0.45;
 }
@@ -4436,7 +4447,7 @@ img {
   margin-bottom: 12px;
   padding-left: 20px;
   position: relative;
-  color: #626B72;
+  color: #c4c4c4;
   font-size: 15px;
   font-weight: 400;
 }
@@ -4460,12 +4471,18 @@ img {
 .conset-service-section,
 .conset-service-section-s2 {
   position: relative;
-  background: url(../images/service-bg.jpg);
+  background-color: var(--bgcolor);
   -o-object-fit: cover;
      object-fit: cover;
   background-repeat: no-repeat;
   z-index: 1;
   padding-bottom: 80px;
+}
+.content span{
+  background-color:white!important;
+}
+.content{
+  height: 12rem!important;
 }
 .conset-service-section::before,
 .conset-service-section-s2::before {
@@ -4476,7 +4493,6 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #F7F8FB;
   opacity: 0.68;
   z-index: -1;
 }
@@ -8997,7 +9013,7 @@ img {
 .wpo-contact-pg-section .office-info .office-info-item .office-info-icon {
   width: 85px;
   height: 85px;
-  background: #f5f5f5;
+  background: var(--primary);
   line-height: 85px;
   text-align: center;
   margin: 0 auto;
