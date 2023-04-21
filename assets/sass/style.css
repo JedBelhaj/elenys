@@ -134,6 +134,16 @@ img {
   overflow: hidden;
 }
 
+.wpo-project-single-content-des-right li{
+  color: var(--primary)!important;
+  margin-bottom: 2rem;
+}
+
+.wpo-project-single-content-des-right li span{
+  color: white!important;
+  
+}
+
 .wow {
   visibility: hidden;
 }
@@ -5041,7 +5051,6 @@ a{
 
 /* 3.6 conset-project-section */
 .conset-project-section {
-  background: url(../images/project/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
